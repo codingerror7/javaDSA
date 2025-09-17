@@ -50,3 +50,33 @@ public class dsa{
 
     }
 }
+
+
+
+import java.util.*;
+
+public class dsa{
+     public static int linearSearch(String food[],String key){
+            for(int i = 0; i <= 7; i++){
+                if(food[i].equals(key)){       //for string comparison
+                    return i;
+                }
+            }
+            return -1;
+        }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+          System.out.println("PLEASE ENTER YOUR FOOD:");
+        String key = sc.nextLine();
+        String food[] = {"dosa","idli-sambhar","vada-pav","chhole-bhature","kachori","samosa","bread","rice"};
+        int res = linearSearch(food,key);
+        if(res==-1){
+            System.out.println("KEY NOT FOUND!");
+        }
+        else{
+            System.out.println("KEY FOUNDED AT INDEX " + res);
+        }
+
+    }
+}
+
