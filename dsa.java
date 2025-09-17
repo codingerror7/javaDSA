@@ -1,3 +1,28 @@
+//LINEAR SEARCH WITHOUT INPUT:
+public class Main{
+    public static int linearSearch(int numbers[],int key){
+        for(int i = 0; i<=14; i++){
+            if(numbers[i]==key){
+                return i;
+            }
+        }
+        return -1;
+    }
+    public static void main(String args[]){
+        int numbers[] = {11,22,33,44,54,43,32,21,65,76,87,98,90,78,89};
+        int key = 89;
+        int res = linearSearch(numbers, key);
+        if(res==-1){
+            System.out.println("NO KEY FOUND!");
+        }
+        else{
+            System.out.println("KEY AT INDEX = " + res);
+        }
+    }
+}
+
+
+
 //LINAR SEARCH ALGORITHM:
 import java.util.*;
 
