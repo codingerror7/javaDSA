@@ -139,3 +139,38 @@ public class dsa{
         System.out.println("KEY IS AT INDEX: " + res);
     }
 }
+
+
+//BINARY SEARCH ALGO BY INPUT FROM USER:
+import java.util.*;
+
+public class dsa{
+    public static int binarySearch(int numbers[],int key){
+        int start = 0, end = numbers.length - 1;
+        while(start <= end){
+            int mid = (start+end)/2;
+            if(key==numbers[mid]){
+                return mid;
+            }
+            else if(key > numbers[mid]){  //right shift:
+                start = mid + 1;
+            }
+            else if(key < numbers[mid]){   //left shift:
+                end = mid - 1;
+            }
+            // else{
+            //     System.out.println("KEY NOT FOUND!");
+            // }
+        }
+        return -1;
+    }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int numbers[] = {10,20,30,40,50,60,70,80,90,100};
+        System.out.println("PLEASE ENTER A KEY:");
+        int key = sc.nextInt();
+        int res = binarySearch(numbers,key);
+        System.out.println("YOUR KEY IS AT INDEX: " + res);
+
+    }
+}
