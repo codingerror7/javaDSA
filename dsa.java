@@ -80,3 +80,36 @@ public class dsa{
     }
 }
 
+
+
+
+//PROGRAMME TO FIND LARGEST NUMBER SMALLEST NUMBER:
+ import java.util.*;
+
+ public class dsa{
+     public static int largestNum(int numbers[]){
+         int largest = Integer.MIN_VALUE;      
+         int smallest = Integer.MAX_VALUE;
+         for(int i = 0; i < numbers.length; i++){
+             if(numbers[i]>largest){
+                 largest = numbers[i];
+             }
+             if(numbers[i]<smallest){
+                 smallest = numbers[i];
+             }
+         }
+         System.out.println("SMALLEST IS: " + smallest);
+         return largest;
+     }
+     public static void main(String args[]){
+         int numbers[] = {123,345,567,789,909,987,876,654,543,564,431,321,3333};
+         int res = largestNum(numbers);
+         System.out.println("LARGSET NUMBERS IS: " + res);
+         System.out.println(Integer.MAX_VALUE);
+         System.out.println(Integer.MIN_VALUE);
+     }
+ }
+
+
+
+
