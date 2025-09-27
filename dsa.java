@@ -174,3 +174,17 @@ public class dsa{
 
     }
 }
+
+
+
+//BITWISE OPERATORS:
+// import java.util.Scanner;
+
+// public class dsa{
+//     public static void main(String args[]){
+//         System.out.println(4 & 5);
+//         System.out.println(9|5);
+//         System.out.println(6^9);
+//         System.out.println(~8);
+//     }
+// }
