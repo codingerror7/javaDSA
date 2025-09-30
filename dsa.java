@@ -188,3 +188,56 @@ public class dsa{
          System.out.println(~8);
      }
  }
+
+
+//STRING MANIPULATION:
+ import java.util.Scanner;
+
+ public class dsa{
+     public static void main(String args[]){
+         Scanner sc = new Scanner(System.in);
+         System.out.println("Please input a string");
+         String str = sc.nextLine();
+         System.out.println("String is:" + " " + str);
+         System.out.println(str.length());
+         System.out.println(str.charAt(7));
+     }
+ }
+
+
+    
+
+ import java.util.Scanner;;
+
+ public class dsa{
+     public static void main(String args[]){
+         Scanner sc = new Scanner(System.in);
+         System.out.println("ENTER STR 1:");
+         String str1 = sc.nextLine().toUpperCase();
+         System.out.println("ENTER STR 2:");
+         String str2 = sc.nextLine().toUpperCase();
+         int str3 = str1.length();
+         int str4 = str2.length();
+         if(str3>str4){
+             System.out.println("STR1 IS >> STR2");
+             System.out.println(str1);
+         }
+         else if(str4>str3){
+             System.out.println("STR2 IS GREATER THAN STR1");
+             System.out.println(str2);
+         }
+         else if(str1.equals(str2)){
+             System.out.println("khud dekhlo...");
+             System.out.println(str1);
+             System.out.println(str2);
+         }
+         else{
+             System.out.println("Hatttt");
+         }
+     }
+ }
+
+
+//----------------------------------------------------------------------------------------
+
+
