@@ -241,3 +241,209 @@ public class dsa{
 //----------------------------------------------------------------------------------------
 
 
+
+
+//OOPS:
+ class Animal{
+     String name;
+     int age;
+
+     void eat(){
+         System.out.println("eats..");
+     }
+     void sleep(){
+         System.out.println("sleeping...");
+     }
+ }
+ public class dsa{
+     public static void main(String args[]){
+         Animal a1 = new Animal();
+         a1.name = "elephant";
+         a1.age = 20;
+         System.out.println("The name is:" + " " + a1.name);
+         System.out.println("The age is:" + " " + a1.age);
+         a1.eat();
+         a1.sleep();
+
+         Animal a2 = new Animal();
+         a2.name = "cat";
+         a2.age = 8;
+         System.out.println("The name is:" + " " + a2.name);
+         System.out.println("The age is:" + " " + a2.age);
+         a2.eat();
+         a2.sleep();
+     }
+ }
+
+
+
+
+ class Animal{
+     String name;
+     int age;
+
+     void eat(){
+         System.out.println("HE IS EATING...");
+     }
+     void sleep(){
+         System.out.println("HE IS SLEEPING...");
+     }
+ }
+ class Fish{
+     String name;
+     int weight;
+
+     void swim(){
+         System.out.println("SWIMMING...");
+     }
+     void eat(){
+         System.out.println("HE IS EATING...");
+     }
+ }
+ class Bird{
+     String name;
+     int age;
+
+     void flying(){
+         System.out.println("ITS FLYING HIGHHH...");
+     }
+     void hungry(){
+         System.out.println("ITS HUNGRYY LOOKING FOR FOOD.");
+     }
+ }
+ class Mammals{
+     String type;
+     int weight;
+
+     void walk(){
+         System.out.println("WALKING AND WALKING...");
+     }
+     void eat(){
+         System.out.println("EATING FOOD...");
+     }
+     void sleep(){
+         System.out.println("SLEEPING..");
+     }
+     void breathing(){
+         System.out.println("BHAI SAAnS TO LENE DE!");
+     }
+ }
+ public class dsa{
+     public static void main(String args[]){
+         System.out.println("FOR ANIMALS:");
+         System.out.println("ANIMAL 1:");
+         Animal a1 = new Animal();
+         a1.name = "cat";
+         a1.age = 8;
+         System.out.println("THE NAME IS" + " " + a1.name);
+         System.out.println("THE AGE IS" + " " + a1.age);
+         a1.eat();
+         a1.sleep();
+
+         System.out.println("ANIMAL 2:");
+         Animal a2 = new Animal();
+         a2.name = "dog";
+         a2.age = 14;
+         System.out.println("THE NAME IS" + " " + a2.name);
+         System.out.println("THE AGE IS" + " " + a2.age);
+         a2.eat();
+         a2.sleep();
+
+
+         System.out.println("FOR FISHES:");
+         System.out.println("FISH 1:");
+         Fish f1 = new Fish();
+         f1.name = "Tuna";
+         f1.weight = 20;
+         System.out.println("THE NAME IS" + " " + f1.name);
+         System.out.println("THE WEIGHT IS" + " " + f1.weight + "Kg");
+         f1.swim();
+         f1.eat();
+
+         System.out.println("FISH 2:");
+         Fish f2 = new Fish();
+         f2.name = "pyrana";
+         f2.weight = 35;
+         System.out.println("THE NAME IS" + " " + f2.name);
+         System.out.println("THE WEIGHT IS" + " " + f2.weight + "Kg");
+         f2.swim();
+         f2.eat();
+
+
+         System.out.println("FOR BIRDS:");
+         System.out.println("FISH 1:");
+         Bird b1 = new Bird();
+         b1.name = "Sparrow";
+         b1.age = 12;
+         System.out.println("THE NAME IS" + " " + b1.name);
+         System.out.println("THE AGE IS" + " " + b1.age);
+         b1.flying();
+         b1.hungry();
+
+
+         System.out.println("FISH 2:");
+         Bird b2 = new Bird();
+         b2.name = "Crow";
+         b2.age = 9;
+         System.out.println("THE NAME IS" + " " + b2.name);
+         System.out.println("THE AGE IS" + " " + b2.age);
+         b2.flying();
+         b2.hungry();
+
+         System.out.println("FOR MAMMALS:");
+         System.out.println("MAMMAL 1:");
+         Mammals m1 = new Mammals();
+         m1.type = "HUMANS";
+         m1.weight = 80;
+         System.out.println("TYPE IS" + " " + m1.type);
+         System.out.println("WEIGHT IS" + " " + m1.weight + "Kg");
+         m1.walk();
+         m1.eat();
+         m1.sleep();
+         m1.breathing();
+
+
+         System.out.println("MAMMAL 2:");
+         Mammals m2 = new Mammals();
+         m2.type = "Whale";
+         m2.weight = 1110;
+         System.out.println("TYPE IS" + " " + m2.type);
+         System.out.println("WEIGHT IS" + " " + m2.weight + "Kg");
+         m2.walk();
+         m2.eat();
+         m2.sleep();
+         m2.breathing();
+     }
+ }
+
+
+INHERITANCE:
+ class Pen{
+     String name;
+     String type;
+
+     void write(){
+         System.out.println("WRITING...");
+     }
+ }
+ class Pencil extends Pen{
+     void cutter(){
+         System.out.println("SHARPENER");
+     }
+ }
+ public class dsa{
+     public static void main(String args[]){
+         Pen p1 = new Pen();
+         p1.name = "apsara";
+         System.out.println(p1.name);
+         p1.type = "gel";
+         System.out.println(p1.type);
+         p1.write();
+
+         Pencil p2 = new Pencil();
+         p2.name = "natraj";
+         System.out.println(p2.name);
+         p2.write();
+         p2.cutter();
+     }
+ }
