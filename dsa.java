@@ -300,6 +300,34 @@ public class dsa{
  }
 
 
+
+import java.util.Scanner;
+public class dsa{
+    public static void main(String args[]){
+        String str = "sujal saraswat";
+        String uc = str.toUpperCase();
+        String lc = str.toLowerCase();
+        char ca = str.charAt(3);
+        String concat = str.concat(" is a coder.");
+        int length = str.length();
+        int indexOf = str.indexOf("sujal");
+        String ss = str.substring(8);
+        String replace = str.replace("a", "l");
+        System.out.println("ACTUAL STRING IS" + " " + str);
+        System.out.println("UPPERCASE IS" + " " + uc);
+        System.out.println("LOWERCASE IS" + " " + lc);
+        System.out.println("charAt is" + " " + ca);
+        System.out.println("CONCATENATE IS" + " " + concat);
+        System.out.println("LENGTH IS" + " " + length);
+        System.out.println("INDEXOF IS" + " " + indexOf);
+        System.out.println("SUBSTRING IS" + " " + ss);
+        System.out.println("REPLACEMENT IS" + " " + replace);
+
+    }
+}
+
+
+
 //----------------------------------------------------------------------------------------
 
 
