@@ -97,6 +97,20 @@ public class dsa{
 }
 
 
+//INPUT IN 2D ARRAYS:
+import java.util.Scanner;
+
+public class dsa{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int arr[][] = new int[1][2];
+        arr[0][0] = sc.nextInt();
+        arr[0][1] = sc.nextInt();
+        System.out.println(arr[0][0]*arr[0][1]);
+    }
+}
+
+
 
 //PROGRAMME TO FIND LARGEST NUMBER SMALLEST NUMBER:
  import java.util.*;
