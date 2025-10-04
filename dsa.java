@@ -53,6 +53,7 @@ public class dsa{
 
 
 
+
 import java.util.*;
 
 public class dsa{
@@ -112,6 +113,25 @@ public class dsa{
 
 
 
+//STRING INPUT AND ARRAY CONCATENATION IN 2D ARRAYS:
+import java.util.Scanner;
+
+public class dsa{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        String[][] arr = new String[1][2];
+        arr[0][0] = sc.nextLine();
+        arr[0][1] = sc.nextLine();
+        System.out.println("first one is:" + " " + arr[0][0]);
+        System.out.println("Second one is:" + " " + arr[0][1]);
+        String con = "FULL NAME IS:" + " " + arr[0][0] + " " + arr[0][1]; //ARRAY CONCATENTAION
+        System.err.println(con); 
+    }
+}
+
+
+
+
 //PROGRAMME TO FIND LARGEST NUMBER SMALLEST NUMBER:
  import java.util.*;
 
@@ -138,6 +158,7 @@ public class dsa{
          System.out.println(Integer.MIN_VALUE);
      }
  }
+
 
 
 
