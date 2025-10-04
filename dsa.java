@@ -82,6 +82,21 @@ public class dsa{
 
 
 
+//2D ARRAYS:
+import java.util.*;
+
+public class dsa{
+    public static void main(String args[]){
+        int[][] arr = new int[1][2];        // 1 row and 2 columns.
+        arr[0][0] = 98;
+        arr[0][1] = 33;
+        System.out.println(arr[0][0]);
+        System.out.println(arr[0][1]);
+
+    }
+}
+
+
 
 //PROGRAMME TO FIND LARGEST NUMBER SMALLEST NUMBER:
  import java.util.*;
