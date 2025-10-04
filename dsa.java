@@ -131,6 +131,18 @@ public class dsa{
 
 
 
+//3D ARRAYS:
+import java.util.Scanner;
+
+public class dsa{
+    public static void main(String args[]){
+        int[][][] arr = new int[1][1][1];
+        arr[0][0][0] = 22;
+        System.out.println(arr[0][0][0]);
+    }
+}
+
+
 
 //PROGRAMME TO FIND LARGEST NUMBER SMALLEST NUMBER:
  import java.util.*;
