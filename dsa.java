@@ -574,3 +574,16 @@ public class dsa{
         }
     }
 }
+
+//RECURSION BASICS:
+public class dsa{
+    public static void printNum(int n){
+        if(n==0) return;
+        System.out.print(n + " ");
+        printNum(n-1);
+    }
+    public static void main(String args[]){
+        System.out.println("NUMS ARE:");
+        printNum(5);
+    }
+}
