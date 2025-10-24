@@ -614,3 +614,20 @@ public class dsa{
         printNum(10);
     }
 }
+
+
+//FIND FACTORIAL:
+public class dsa{
+    public static int printFact(int n){
+        if(n==0){
+            return 1;
+        }
+        int fact = printFact(n-1);
+        int fn = n * fact;
+        System.out.println(fn);
+        return fn;
+    }
+    public static void main(String args[]){
+        printFact(5);
+    }
+}
