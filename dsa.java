@@ -673,3 +673,23 @@ public class dsa{
         table(m,1);
     }
 }
+
+
+
+//FIND SUM OF N NATURAL NUMBERS:
+public class dsa{
+    public static int sum(int m, int n){
+        if(n==6){
+            return 1;
+        }
+        int res = (m += n);
+        System.out.println(res);
+        sum(m,n+1);
+        return res;
+
+    }
+    public static void main(String args[]){
+        int m = 0;
+        sum(m,1);
+    }
+}
