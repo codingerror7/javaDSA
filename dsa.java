@@ -631,3 +631,21 @@ public class dsa{
         printFact(5);
     }
 }
+
+
+//PRINTING TABLE:
+public class dsa{
+    public static int table(int m, int n){
+        if(n==11) return 1;
+        int res = m*n;
+        System.out.println(res);
+        table(m,n+1);
+        return res;
+
+
+    }
+    public static void main(String args[]){
+        System.out.println("TABLE IS:");
+        table(2,1);
+    }
+}
