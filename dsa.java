@@ -649,3 +649,27 @@ public class dsa{
         table(2,1);
     }
 }
+
+
+
+//TABLE FROM USER INPUT IN RECURSION:
+import java.util.Scanner;
+
+public class dsa{
+    public static int table(int m, int n){
+        if(n==11){
+            return 1;
+        }
+        int res = m*n;
+        System.out.println(res);
+        table(m,n+1);
+        return res;
+    }
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("PLEASE ENTER m:");
+        int m = sc.nextInt();
+        System.out.println("Table of" + " " + m + " " + "is:");
+        table(m,1);
+    }
+}
