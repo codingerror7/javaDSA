@@ -693,3 +693,21 @@ public class dsa{
         sum(m,1);
     }
 }
+
+
+//FIBONACCI PROBLEM:
+public class dsa{
+    public static int fib(int n){
+        if(n==0 || n==1){
+            return n;
+        }
+        int fib1 = fib(n-1);
+        int fib2 = fib(n-2);
+        int fib = fib1 + fib2;
+        return fib;
+    }
+    public static void main(String args[]){
+        int n = 25;
+        System.out.println(fib(n));
+    }
+}
