@@ -711,3 +711,23 @@ public class dsa{
         System.out.println(fib(n));
     }
 }
+
+
+//FIRST OCCURENCE IN ARRAY:
+public class dsa{
+    public static int printNum(int arr[], int key, int i){
+        if(i==arr.length){
+            return -1;
+        }
+        if(arr[i]==key){
+            return i;
+        }
+        return printNum(arr, key, i+1);
+    }
+    public static void main(String args[]){
+        int[] arr = {12,23,34,11,56,45,45,67,78,87};
+        int key = 45;
+        System.out.println(printNum(arr, key, 0));
+
+    }
+}
