@@ -747,3 +747,26 @@ public class dsa{
         System.out.println(power(x, n));
     }
 }
+
+//TILING PROBLEM:
+public class dsa{
+    public static int tilingProblem(int n){
+        //BASE CASE
+        if(n==0 || n==1){
+            return 1;
+        }
+        //KAAM
+        //VERTICAL CHOICE
+        int fnm1 = tilingProblem(n-1);
+
+        //HORIZONTAL CHOICE
+        int fnm2 = tilingProblem(n-2);
+
+        //TOTAL
+        int ttl = fnm1 + fnm2;
+        return ttl;
+    }
+    public static void main(String args[]){
+        System.out.println(tilingProblem(3));
+    }
+}
