@@ -1,3 +1,22 @@
+//strinbuilders code
+public class StringBuilderExample {
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder("Hello"); // Initial string
+        sb.append(" World"); // Appends to the existing object
+        sb.insert(5, " Java"); // Inserts at index 5
+        sb.replace(0, 5, "Welcome"); // Replaces "Hello" with "Welcome"
+        sb.delete(12, 17); // Deletes "World" (using new indices)
+        sb.reverse(); // Reverses the string
+
+        // Convert the final mutable sequence to an immutable String
+        String result = sb.toString();
+        System.out.println(result);
+    }
+}
+// The output of the code above (before the reverse call) is "Welcome Java World"
+
+
+
 //LINEAR SEARCH WITHOUT INPUT:
 public class Main{
     public static int linearSearch(int numbers[],int key){
