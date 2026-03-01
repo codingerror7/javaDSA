@@ -814,3 +814,58 @@ public class dsa{
         
     }
 }
+
+//BUBBLE SORT (ASCENDING ORDER)
+ public class dsa{
+     public static void bubbleSort(int arr[]){
+         //OUTER LOOP FOR PASSES
+         for(int i = 0; i < arr.length-1; i++){
+             //INNER LOOP FOR COMAPRING EACH ELEMENT
+             for(int j =0; j < arr.length-1-i; j++){
+                 if(arr[j]>arr[j+1]){
+                     //SWAPPING
+                     int temp = arr[j];
+                     arr[j] = arr[j+1];
+                     arr[j+1] = temp;
+                 }
+             }
+         }
+     }
+     public static void main(String args[]){
+         int[] arr = {28,99,44,56,65,12,11,4};
+         bubbleSort(arr);
+         for(int i = 0; i < arr.length; i++){
+           System.out.print(arr[i] + " ");
+         }
+
+     }
+ }
+
+
+//BUBBLE SORT(DESCENDING ORDER)
+public class dsa{
+    public static void bubbleSort(int arr[]){
+        //ASSIGNED ARRAY LENGTH TO VARIABLE N
+        int n = arr.length;
+        //OUTER LOOP FOR PASSES
+        for(int i = 0; i < n-1; i++){
+            //INNER LOOP FOR ELEMENT COMPARISON
+            for(int j = 0; j < n-1-i; j++){
+                if(arr[j]<arr[j+1]){
+                    //SWAPPING
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+    }
+    public static void main(String args[]){
+        int[] arr = {34,12,77,90,98,55,1};
+        bubbleSort(arr);
+        for(int i = 0; i < arr.length; i++){
+            System.out.print(arr[i] + " ");
+        }
+    }
+
+}
