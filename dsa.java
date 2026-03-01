@@ -789,3 +789,28 @@ public class dsa{
         System.out.println(tilingProblem(3));
     }
 }
+
+/FRIENDS PAIRING PROBLEM:
+public class dsa{
+    public static int friendsPairing(int n){
+        //BASE CASE
+        if(n==1 || n==2){
+            return n;
+        }
+        //CHOICE
+        //SINGLE
+        int fnm1 = friendsPairing(n-1);
+
+        //PAIR
+        int fnm2 = friendsPairing(n-2);
+        int pairWays = (n-1) * fnm2;
+
+        //TOTAL WAYS
+        int totalWays = fnm1 + pairWays;
+        return totalWays;
+    }
+    public static void main(String args[]){
+        System.out.println(friendsPairing(3));
+        
+    }
+}
