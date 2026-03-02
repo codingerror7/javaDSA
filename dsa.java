@@ -869,3 +869,58 @@ public class dsa{
     }
 
 }
+
+
+//SELECTION SORT (ASCENDING ORDER)
+public class dsa{
+    public static void selectionSort(int arr[]){
+        int n = arr.length;
+        for(int i = 0; i < n-1; i++){
+            int minArr = i;
+            for(int j = i+1; j < n; j++){
+                if(arr[j]<arr[minArr]){
+                    minArr = j;
+                }
+            }
+            //SWAPPING:
+            int temp = arr[i];
+            arr[i] = arr[minArr];
+            arr[minArr] = temp;
+        }
+    }
+    public static void main(String args[]){
+        int arr[] = {22,43,56,8,90,9,1,32};
+        selectionSort(arr);
+        for(int i = 0; i < arr.length; i++){
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+
+
+//SELECTION SORT(DESCENDING ORDER)
+public class dsa{
+    public static void selectionSort(int arr[]){
+        int n = arr.length;
+        for(int i = 0; i < n-1; i++){
+            int minArr = i;
+            for(int j = i + 1; j < n; j++){
+                if(arr[j]>arr[minArr]){
+                    minArr = j;
+                }
+            }
+            //SWAPPING
+            int temp = arr[i];
+            arr[i] = arr[minArr];
+            arr[minArr] = temp;
+        }
+    }
+    public static void main(String args[]){
+        int arr[] = {1,2,3,4,5,6,7,8,9,10};
+        selectionSort(arr);
+        for(int i = 0; i < arr.length; i++){
+            System.out.print(arr[i] + " ");
+        }
+
+    }
+}
